@@ -1,6 +1,6 @@
 {
     "name": "flossels/teaser",
-    "description": "Teaser elements for TYPO3",
+    "description": "This TYPO3 extension allows you to create simple teasers to existing pages and files. You also have the possibility to create teasers for other links like external links, phone numbers or email addresses.",
     "keywords": [
         "TYPO3",
         "Teaser",

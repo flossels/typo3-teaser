@@ -2,7 +2,7 @@
 
 $EM_CONF['teaser'] = [
     'title' => 'Teaser',
-    'description' => 'Teaser elements for TYPO3.',
+    'description' => 'This extension allows you to create simple teasers to existing pages and files. You also have the possibility to create teasers for other links like external links, phone numbers or email addresses.',
     'version' => '0.1.0-dev',
     'category' => 'plugin',
     'constraints' => [
