@@ -1,0 +1,71 @@
+lib.contentElement {
+    partialRootPaths.1616266485 = EXT:teaser/Resources/Private/Partials/
+    templateRootPaths.1616266485 = EXT:teaser/Resources/Private/Templates/
+}
+
+tt_content {
+    tx_teaser_teaser =< lib.contentElement
+    tx_teaser_teaser {
+        templateName = Teaser
+        dataProcessing {
+            10 = Flossels\Teaser\Frontend\DataProcessing\TeaserProcessor
+
+            20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            20 {
+                references.fieldName = assets
+            }
+        }
+
+        settings {
+            tx_teaser_teaser {
+                page {
+                    image {
+                        fields = og_image,media
+                        default = EXT:teaser/Resources/Public/Images/Page.jpg
+                    }
+
+                    header = title
+                    subheader = subtitle
+                    bodytext = abstract,description
+                    date =
+                    showUnavailablePages = 1
+                }
+
+                file {
+                    image {
+                        default = EXT:teaser/Resources/Public/Images/File.jpg
+
+                        csv = EXT:teaser/Resources/Public/Images/File/Table.jpg
+                        xls = EXT:teaser/Resources/Public/Images/File/Table.jpg
+                        xlsx = EXT:teaser/Resources/Public/Images/File/Table.jpg
+
+                        doc = EXT:teaser/Resources/Public/Images/File/Text.jpg
+                        docx = EXT:teaser/Resources/Public/Images/File/Text.jpg
+                        txt = EXT:teaser/Resources/Public/Images/File/Text.jpg
+
+                        ppt = EXT:teaser/Resources/Public/Images/File/Presentation.jpg
+                        pptx = EXT:teaser/Resources/Public/Images/File/Presentation.jpg
+                    }
+
+                    header = title
+                    subheader = alternative
+                    bodytext = description
+                    date =
+                    showUnavailableFiles = 1
+                }
+
+                folder.image.default = EXT:teaser/Resources/Public/Images/Folder.jpg
+
+                url.image.default = EXT:teaser/Resources/Public/Images/Url.jpg
+
+                email.image.default = EXT:teaser/Resources/Public/Images/Email.jpg
+
+                telephone.image.default = EXT:teaser/Resources/Public/Images/Telephone.jpg
+
+                record.image.default = EXT:teaser/Resources/Public/Images/Folder.jpg
+
+                unknown.image.default = EXT:teaser/Resources/Public/Images/Unknown.jpg
+            }
+        }
+    }
+}

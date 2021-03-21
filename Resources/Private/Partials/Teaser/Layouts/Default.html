@@ -1,0 +1,17 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:render partial="Teaser/File" arguments="{files: files, teaser: teaser, class: 'card-img-top img-fluid'}"/>
+
+<div class="card-body">
+	<f:render partial="Teaser/Header" arguments="{teaser: teaser, settings: settings}"/>
+
+	<f:if condition="{teaser.bodytext}">
+		<div class="card-text">
+			<f:format.html>{teaser.bodytext}</f:format.html>
+		</div>
+	</f:if>
+
+	<f:if condition="{teaser.link}">
+		<f:link.typolink parameter="{teaser.link}" class="card-link">{teaser.linkLabel}</f:link.typolink>
+	</f:if>
+</div>

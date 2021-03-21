@@ -1,0 +1,15 @@
+mod.wizards.newContentElement.wizardItems {
+    common {
+        elements {
+            tx_teaser_teaser {
+                iconIdentifier = tx-teaser-teaser
+                title = Teaser
+                description = Teaser
+                tt_content_defValues {
+                    CType = tx_teaser_teaser
+                }
+            }
+        }
+        show := addToList(tx_teaser_teaser)
+    }
+}

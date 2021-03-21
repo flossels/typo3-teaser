@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2021-03-21T16:31:29Z" product-name="teaser">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.tabs.override">
+                <source>Data Overrides</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.palette.teaser_header">
+                <source>Header</source>
+            </trans-unit>
+            <trans-unit id="tt_content.palette.teaser_link">
+                <source>Link</source>
+            </trans-unit>
+
+            <trans-unit id="tt_content.layout.default">
+                <source>Default (Card)</source>
+            </trans-unit>
+            <trans-unit id="tt_content.layout.overlay">
+                <source>Image Overlay</source>
+            </trans-unit>
+            <trans-unit id="tt_content.table_caption">
+                <source>Link Label</source>
+            </trans-unit>
+            <trans-unit id="tt_content.assets">
+                <source>Image</source>
+            </trans-unit>
+            <trans-unit id="tt_content.header_link.description">
+                <source>Each link target already provides certain information such as title or image. This data can be overwritten in the "Data Override" tab.</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

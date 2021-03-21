@@ -1,0 +1,10 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{teaser.headerLayout} != 100">
+	<f:if condition="{teaser.header} || {teaser.subheader} || {teaser.date}">
+		<header>
+			<f:render partial="Header/Header" arguments="{header: teaser.header, layout: teaser.headerLayout, positionClass: 'card-title', default: settings.header.defaultHeaderType}"/>
+			<f:render partial="Header/SubHeader" arguments="{subheader: teaser.subheader, layout: teaser.headerLayout, positionClass: 'card-subtitle mb-2 text-muted', default: settings.header.defaultHeaderType}"/>
+			<f:render partial="Header/Date" arguments="{date: teaser.date}"/>
+		</header>
+	</f:if>
+</f:if>

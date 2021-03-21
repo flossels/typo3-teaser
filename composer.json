@@ -1,0 +1,63 @@
+{
+    "name": "flossels/teaser",
+    "description": "Teaser elements for TYPO3",
+    "keywords": [
+        "TYPO3",
+        "Teaser",
+        "Extension",
+        "Elements",
+        "Preview"
+    ],
+    "type": "typo3-cms-extension",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://flossels.de",
+    "authors": [
+        {
+            "name": "Florian Wessels",
+            "email": "hey@flossels.de",
+            "role": "Developer",
+            "homepage": "https://flossels.de"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flossels/typo3-teaser/issues",
+        "source": "https://github.com/flossels/typo3-teaser",
+        "email": "hey@flossels.de",
+        "docs": "https://docs.typo3.org/p/flossels/teaser/master/en-us/"
+    },
+    "require": {
+        "typo3/cms-core": "^10.4.14"
+    },
+    "suggest": {
+        "typo3/cms-filemetadata": "If you want to provide more details for assets",
+        "b13/container": "If you want to put teaser into a nice grid"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flossels\\Teaser\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Flossels\\Teaser\\Tests\\": "Tests/"
+        }
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare",
+            "mkdir -p .Build/web/typo3conf/ext/",
+            "[ -L .Build/web/typo3conf/ext/teaser ] || ln -snvf ../../../../. .Build/web/typo3conf/ext/teaser"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/web",
+            "extension-key": "teaser"
+        }
+    }
+}
